@@ -15,30 +15,16 @@ import {
   Image,
   ScrollView
 } from "react-native";
-import axios from "axios";
-
-const instructions = Platform.select({
-  ios: "Press Cmd+R to reload,\n" + "Cmd+D or shake for dev menu",
-  android:
-    "Double tap R on your keyboard to reload,\n" +
-    "Shake or press menu button for dev menu"
-});
 
 export default class App extends Component {
   state = {
     articles: []
   };
-  // componentDidMount() {
-  //   axios.get(`http://192.168.137.1:1234/wcf/omidservice.svc/ArticlesList/-1`)
-  //     .then(res => {
-  //       const articles = res.data.ArticlesListResult;
-  //       this.setState({ articles });
-  //     })
-  // }
+
   render() {
     return (
       <View>
-        <Text>Daniel</Text>
+        <RootNavigator />
       </View>
     );
   }
