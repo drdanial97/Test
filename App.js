@@ -7,7 +7,7 @@
  */
 
 import React, { Component } from "react";
-import {RootNavigator} from './route';
+import { RootNavigator } from "./route";
 import {
   Platform,
   StyleSheet,
