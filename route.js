@@ -1,6 +1,8 @@
 import { StackNavigator } from "react-navigation";
-import { Home } from "./index";
-import { About } from "./index";
+import Home from "./home";
+import About from "./about";
+
+// import { About } from "./index";
 
 const RootNavigator = StackNavigator(
   {
@@ -9,7 +11,8 @@ const RootNavigator = StackNavigator(
   },
   {
     headerMode: "none",
-    mode: "modal"
+    mode: "modal",
+    initialRouteName: "Home"
   }
 );
 

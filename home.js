@@ -1,10 +1,15 @@
-import react, { Component } from "react";
-const { navigate } = this.props.navigate;
-class home extends Component() {
+import React, { Component } from "react";
+import { View, Text, TouchableOpacity } from "react-native";
+
+export default class Home extends Component {
   render() {
     return (
-      <View>
-        <Text onPrees={() => navigate("About")}>Home</Text>
+      <View style={{ flex: 1, backgroundColor: "orange" }}>
+        <TouchableOpacity
+          onPress={() => this.props.navigation.navigate("About")}
+        >
+          <Text style={{ fontSize: 36 }}>Home</Text>
+        </TouchableOpacity>
       </View>
     );
   }

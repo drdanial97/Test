@@ -18,16 +18,8 @@ import {
 } from "react-native";
 
 export default class App extends Component {
-  state = {
-    articles: []
-  };
-
   render() {
-    return (
-      <View>
-        <RootNavigator />
-      </View>
-    );
+    return <RootNavigator />;
   }
 }
 
